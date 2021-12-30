@@ -1,5 +1,5 @@
 import { Container, Grid, Box, Link, Typography } from "@mui/material";
-import CopyrightIcon from '@mui/icons-material/Copyright';
+import CopyrightIcon from "@mui/icons-material/Copyright";
 
 export default function Footer() {
   return (
@@ -47,7 +47,9 @@ export default function Footer() {
               </Box>
             </Grid>
           </Grid>
-		  <Box textAlign='center'>Ethan Yee <CopyrightIcon fontSize="xs"/> 2021</Box>
+          <Box textAlign="center">
+            Ethan Yee <CopyrightIcon fontSize="xs" /> 2021
+          </Box>
         </Container>
       </Box>
     </footer>

@@ -1,20 +1,20 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./Components/assets/global/Navbar";
+
 import Home from "./Components/pages/Home";
+import About from "./Components/pages/About";
 
 function App() {
-  const [data, setData] = useState("");
-  useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((payload) => {
-        setData(payload.data);
-      });
-  });
-
   return (
     <>
-      <h1>Hello World</h1>
-      <h2>{data}</h2>
+      <BrowserRouter>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -13,7 +13,7 @@ const theme = createTheme({
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-	<CssBaseline />
+    <CssBaseline />
     <App />
   </ThemeProvider>,
   document.getElementById("root")

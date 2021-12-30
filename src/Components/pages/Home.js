@@ -10,6 +10,9 @@ export default function Home() {
         setData(payload.data);
       });
   });
+  useEffect(() => {
+    document.title = 'Home - Template'
+  })
   return (
     <>
       <Typography variant="h1">
